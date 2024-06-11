@@ -5,7 +5,6 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <!--=============== FAVICON ===============-->
       <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
       <!--=============== REMIXICONS ===============-->
@@ -15,14 +14,37 @@
       <link rel="stylesheet" href="">
 
       <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
+      <link rel="stylesheet" href="assets/styles.css">
 
-      <title>Responsive headphones website - Bedimcode</title>
+      <title>Responsive headphones website</title>
    </head>
    <body>
       <!--==================== HEADER ====================-->
       <header class="header" id="header">
-         
+        <nav class="nav cotnainer">
+            <a href="#" class="nav__logo">OSVR</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#moder" class="nav__link">Models</a>
+                    </li>
+                </ul>
+                <!-- close button -->
+                 <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                 </div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
       </header>
 
       <!--==================== MAIN ====================-->
@@ -68,6 +90,6 @@
       <script src=""></script>
 
       <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
+      <script src="assets/main.js"></script>
    </body>
 </html>
