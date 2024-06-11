@@ -1,4 +1,3 @@
-/*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
     navClose = document.getElementById('nav-close')
@@ -9,16 +8,11 @@ if (navToggle) {
     })
 }
 
-
 if (navClose) {
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
     })
 }
-
-
-
-/*=============== REMOVE MENU MOBILE ===============*/
 const navLink = document.querySelectorAll('.nav__link')
 
 const linkAction = () => {
@@ -29,10 +23,6 @@ const linkAction = () => {
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-
-
-/*=============== ADD BLUR HEADER ===============*/
-
 const blurHeader = () => {
     const header = document.getElementById('header')
     this.scrollY >= 50 ? header.classList.add('blur-header')
@@ -40,8 +30,6 @@ const blurHeader = () => {
 }
 window.addEventListener('scroll', blurHeader)
 
-
-/*=============== SWIPER FAVORITES ===============*/
 let swiperFavorite = new Swiper('.favorite__swiper', {
     loop: true,
     slidesPerView: 'auto',
@@ -63,8 +51,17 @@ const scrollUp = () =>{
 }
 window.addEventListener('scroll',scrollUp)
 
+const sr = ScrollReveal({
+    origin:'top',
+    distance:'60px',
+    duration:2500,
+    delay:400,
+})
+sr.reveal(`.home__social,.favorite__container, .sponsor__container, .footer`)
+sr.reveal(`.home__title span:nth-child(1)`,{origin:'left',opacity:1})
+sr.reveal(`.home__title span:nth-child(2)`,{origin:'left',opacity:1})
+sr.reveal(`.home__title span:nth-child(3)`,{origin:'right',opacity:1})
+sr.reveal(`.home__tooltip,.home__button, .model__button`,{origin:'bottom'})
+sr.reveal(`.about__data`,{origin:'left'})
+sr.reveal(`.about__img, .model__tooltip`,{origin:'right'})
 
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-
-
-/*=============== SCROLL REVEAL ANIMATION ===============*/
