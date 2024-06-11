@@ -21,33 +21,39 @@ if (navClose) {
 /*=============== REMOVE MENU MOBILE ===============*/
 const navLink = document.querySelectorAll('.nav__link')
 
-const linkAction = ()=>{
+const linkAction = () => {
     const navMenu = document.getElementById('nav-menu')
 
     navMenu.classList.remove('show-menu')
 }
 
-navLink.forEach(n=>n.addEventListener('click',linkAction))
+navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
 
 /*=============== ADD BLUR HEADER ===============*/
 
-const blurHeader = ()=>
-    {
-        const header = document.getElementById('header')
-        this.scrollY >= 50 ? header.classList.add('blur-header')
-                           : header.classList.remove('blur-header')
-    }
-    window.addEventListener('scroll',blurHeader)
+const blurHeader = () => {
+    const header = document.getElementById('header')
+    this.scrollY >= 50 ? header.classList.add('blur-header')
+        : header.classList.remove('blur-header')
+}
+window.addEventListener('scroll', blurHeader)
 
 
 /*=============== SWIPER FAVORITES ===============*/
-let swiperFavorite= new Swiper('.favorite__swiper', {
-    
+let swiperFavorite = new Swiper('.favorite__swiper', {
     loop: true,
- 
-  });
+    slidesPerView: 'auto',
+    centererSlides: 'auto',
+    grabCursor: true,
+
+    breakpoints:{
+        768:{
+            slidesPerView:3,
+        }
+    }
+});
 
 
 
