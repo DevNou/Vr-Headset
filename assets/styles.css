@@ -180,6 +180,20 @@ img {
     top:0;
 }
 
+.blur-header::after{
+    content: '';
+    position: absolute;
+    width: 1000%;
+    height: 100%;
+    background-color: hsla(226, 45%, 53%, 0.12);
+    backdrop-filter: blur(32px);
+    -webkit-backdrop-filter: blur(32px);
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
 .home__container{
     position:relative;
     padding-block: 7rem 1rem;
@@ -212,8 +226,8 @@ img {
 
 .home__tooltip{
     position: absolute;
-    top: -.5rem;
-    right: 1.5rem;
+    top: -.10rem;
+    right: 10rem;
 }
 
 .home__tooltip-img{
@@ -230,3 +244,116 @@ img {
     transform: translate(60px, -40px);
     white-space: nowrap;
 }
+
+.home__social{
+    display:grid;
+    justify-items: center;
+    row-gap: 6rem;
+    position: absolute;
+    top: 9rem;
+    left: -1.5rem;
+}
+
+.home__social-text{
+    position: relative;
+    rotate: 90deg;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+}
+
+.home__social-text::after{
+    content: '';
+    width: 48px;
+    height: 1px;
+    background-color: var(--text-color);    
+    position: absolute;
+    top:0;
+    bottom: 0;
+    margin-block: auto;
+    right: -64px;
+}
+
+.home__social-links{
+    display: grid;
+    row-gap:  .75rem;
+}
+
+.home__social-link{
+    font-size: 1.25rem;
+    color: var(--text-color);
+    transition: color .4s;
+}
+
+.home__social-link:hover{
+    color:var(--first-color);
+}
+
+.home__button{
+    justify-self: center;
+}
+
+.button{
+    background: var(--gradient-color);
+    padding: .75rem 1.5rem;
+    border-radius: 4rem;
+    color:var(--white-color);
+    font-weight: var(--font-semi-bold);
+    display: inline-flex;
+    justify-content: center;
+    column-gap: .5rem;
+    transition: box-shadow .4s;
+}
+
+.button i{
+    font-size: 2rem;
+    font-weight: initial;
+    color:var(--vr-color);
+}
+
+.button:hover{
+box-shadow: 0 12px 32px hsla(226, 45%, 53%, 0.12);
+
+}
+
+.about__container{
+    row-gap: 3.5rem;
+}
+
+.about__data{
+    text-align: center;
+}
+
+.about__description{
+    margin-bottom: 2.5rem;
+}
+
+.about__img{
+    width:280px;
+    justify-self: center;
+}
+
+.favorite__container{
+    padding-top: 2rem;
+}
+
+.favorite__article{
+    width: 220px;
+    display: grid;
+    justify-items: center;
+    /* filter:blur(8px);
+    scale: .8; */
+    transition: filter .3s, scale .3s;
+}
+
+.favorite__img{
+    width: 200px;
+    margin-bottom: 1.5rem;
+}
+
+.favorite__model{
+    background: var(--gradient-color);
+    padding: .5rem 1.5rem;
+    border-radius: 4rem;
+    color:var(--white-color)
+}
+
