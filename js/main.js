@@ -43,6 +43,11 @@ const blurHeader = ()=>
 
 
 /*=============== SWIPER FAVORITES ===============*/
+let swiperFavorite= new Swiper('.favorite__swiper', {
+    
+    loop: true,
+ 
+  });
 
 
 
