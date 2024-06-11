@@ -686,7 +686,7 @@ width: 60px;
     column-gap: 1rem;
 }
 .home__tooltip{
-    right:6rem;
+    right:30rem;
 }
 .home__tooltip-img{
     width: initial;
@@ -706,7 +706,7 @@ width: 60px;
 }
 .home__button{
     position: absolute;
-    bottom: 4.5rem;
+    bottom: -10rem;
 }
 .about__container{
     grid-template-columns: 400px 500px;
@@ -742,7 +742,7 @@ width: 60px;
         transform: translate(82px, -56px);
     }
     .model__tooltip-1{
-        top:7.5rem;
+        top:15rem;
         left: 8.5rem;
     }
     .model__tooltip-1 .model__tooltip-text{
@@ -750,23 +750,23 @@ width: 60px;
     }
     .model__tooltip-2{
         transform: initial;
-        top:6.5rem;
-        right: -1.5rem;
+        top:14rem;
+        right: 8%;
     }
     .model__tooltip-2 .model__tooltip-text{
         transform: translate(82px, -56px);
 }
     .model__tooltip-3 {
         transform: scaleX(-1);
-        left: 0;
-        bottom:6rem;
+        left: 10;
+        bottom:10rem;
     }
     .model__tooltip-3 .model__tooltip-text{
         transform: translate(82px, -56px) scaleX(-1);
     }
     .model__tooltip-4{
-        bottom: 10rem;
-        right:7rem;
+        bottom:10rem;
+        left:20rem;
     }
     .sponsor__container{
         column-gap: 7.5rem;
