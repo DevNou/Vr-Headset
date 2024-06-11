@@ -1,11 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
-
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
   --first-color: hsl(29, 89%, 50%);
   --vr-color:rgb(75, 75, 238);
   --gradient-color: linear-gradient(90deg,
@@ -16,8 +12,6 @@
   --body-color: hsl(23, 12%, 4%);
   --container-color: hsl(23, 4%, 10%);
 
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Poppins", sans-serif;
   --biggest-font-size: 10rem;
   --h1-font-size: 1.5rem;
@@ -27,17 +21,15 @@
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
 
-  /*========== Font weight ==========*/
   --font-regular: 400;
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*========== z index ==========*/
-  --z-tooltip: 10;
+
+ 
   --z-fixed: 100;
 }
 
-/*========== Responsive typography ==========*/
 @media screen and (min-width: 1150px) {
   :root {
     --biggest-font-size: 25rem;
@@ -49,8 +41,7 @@
     --smaller-font-size: .813rem;
   }
 }
-
-/*=============== BASE ===============*/
+/* BASE CONTENT */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -443,4 +434,155 @@ width: 60px;
     justify-content: center;
     align-items: center;
     gap: 5rem 4rem;
+}
+
+.footer{
+    padding-block: 2rem;
+    overflow: hidden;
+}
+
+.footer__container{
+    row-gap: 4rem;
+}
+
+.footer__logo{
+    font-size:var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--vr-color);
+}
+
+.footer__data{
+    grid-template-columns: repeat(2,1fr);
+}
+
+.footer__title{
+    font-size: var(--h3-font-size);
+    margin-bottom: 1rem;
+}
+
+.footer__link{
+    color: var(--text-color);
+    transition: color .4s;
+}
+
+.footer__link:hover{
+    color: var(--first-color);
+}
+
+.footer__group{
+    grid-column:2/3;
+}
+
+.footer__form{
+    display: grid;
+    row-gap: 1rem;
+}
+
+.footer__input,
+.footer__button{
+    font-size:var(--normal-font-size);
+    font-family: var(--body-font);
+    border: none;
+    outline: none;
+
+}
+
+.footer__input{
+    width: 100%;
+    padding: 1.15rem 1.25rem;
+    border-radius: 4rem;
+    background-color: var(--container-color);
+    color: var(--text-color);
+}
+
+.footer__input::placeholder{
+    color:var(--text-color);
+}
+
+.footer__button{
+    cursor: pointer;
+}
+
+.footer__social{
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+}
+
+.footer__social-link{
+    color:var(--white-color);
+    font-size: 1.25rem;
+    transition: color .4s;
+}
+
+.footer__social-link:hover{
+    color:var(--first-color);
+}
+
+.footer__copy{
+    display: block;
+    margin-top: 5rem;
+    font-size: var(--small-font-size);
+    text-align: center;
+}
+
+/* here i will make scrollbar */
+::-webkit-scrollbar{
+    width: .6rem;
+    border-radius: .5rem;
+    background-color:rgb(75, 75, 238);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(20, 20, 226);
+}
+
+.scrollup{
+    position: fixed;
+    right: 1rem;
+    bottom: -50%;
+    background-color: var(--gradient-color);
+    display: inline-flex;
+    color:var(--white-color);
+    font-size: 1.25rem;
+    padding: 6px;
+    border-radius: .25rem;
+    transition: bottom .4s, transform .4s;
+}
+
+.scrollup:hover{
+    transform: translateY(-.5rem);
+}
+
+.show-scroll{
+    bottom: 3rem;
+}
+
+
+/* BREAKPOINTS SOS */
+
+/* for small devices */
+
+@media screen and (max-width:340px){
+    .container{
+        margin-inline:1rem;
+    }
+    .home__img{
+        width: 180px;
+    }
+    .home__title{
+        font-size: 8rem;
+    }
+    .model__img{
+        width: 200px;
+    }
+    .model__tooltip-text{
+        font-size:var(--smaller-font-size);
+        transform: translate(42px,-40px);
+    }
+    .model__tooltip-1 .model__tooltip-text,
+    .model__tooltip-2 .model__tooltip-text{
+        transform: translate(42px,-40px)scaleX(-1);
+    }
+
 }
