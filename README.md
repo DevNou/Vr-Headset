@@ -30,18 +30,13 @@ This project is a website designed to showcase and promote the PlayStation VR pr
 ![image](https://github.com/DevNou/Vr-Headset/assets/145920714/3a974a94-0ce8-4784-8c87-1de32d04be83)
 ![image](https://github.com/DevNou/Vr-Headset/assets/145920714/9e3ffab5-2d99-4185-9b39-70093ce1bd3c)
 ![image](https://github.com/DevNou/Vr-Headset/assets/145920714/1cf4e6c7-a2be-4467-904a-475fe2fb2beb)
+![image](https://github.com/DevNou/Vr-Headset/assets/145920714/343efe95-f74e-487e-9d14-a0831488c650)
 
-
-
-
-    
-
-## Installation
 
 1. Clone the repository: https://github.com/DevNou/Vr-Headset.git
 
    ```bash
-   git clone
+   git clone DevNou/Vr-Headset
 
 
 
