@@ -458,6 +458,7 @@ width: 60px;
 .footer__title{
     font-size: var(--h3-font-size);
     margin-bottom: 1rem;
+    
 }
 
 .footer__link{
@@ -525,6 +526,12 @@ width: 60px;
     font-size: var(--small-font-size);
     text-align: center;
 }
+
+.footer__banner{
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
 
 /* here i will make scrollbar */
 ::-webkit-scrollbar{
