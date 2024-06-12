@@ -436,9 +436,122 @@ width: 60px;
     gap: 5rem 4rem;
 }
 
+.landing {
+    padding: 6rem 0;
+    background-color:var(--vr-color);
+    color: #fff;
+    text-align: center;
+}
+
+.landing__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.landing__content {
+    flex: 1;
+    max-width: 600px;
+    margin-right: 2rem;
+}
+
+.landing__description {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.landing__image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.catalog {
+    padding: 4rem 0;
+    background-color: #0a0a0a;
+}
+
+.catalog__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalog__content {
+    max-width: 1200px;
+    width: 100%;
+}
+
+.catalog__item {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.catalog__img {
+    max-width: 300px;
+    height: auto;
+    margin-right: 2rem;
+}
+
+.catalog__info {
+    flex: 1;
+}
+
+.catalog__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.catalog__description {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.catalog__specs {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.catalog__specs li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--vr);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button i {
+    margin-left: 0.5rem;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button i {
+    margin-left: 0.5rem;
+}
+
+
 .footer{
     padding-block: 2rem;
     overflow: hidden;
+    
 }
 
 .footer__container{
@@ -453,6 +566,7 @@ width: 60px;
 
 .footer__data{
     grid-template-columns: repeat(2,1fr);
+    justify-content: center;
 }
 
 .footer__title{
@@ -781,9 +895,12 @@ width: 60px;
     }
     .footer{
         padding-bottom: 6rem;
+        
     }
     .footer_data{
         column-gap: 6rem;
+        
+        
     }
     .footer__form{
         grid-template-columns: 1fr max-content;
