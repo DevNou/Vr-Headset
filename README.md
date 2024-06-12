@@ -1,6 +1,9 @@
 # PlayStation VR Website
 
 This is a sample README.md file for the PlayStation VR website project. It provides an overview of the project, how to set it up, and additional information.
+git clone
+
+![image](https://github.com/DevNou/Vr-Headset/assets/145920714/dc28ab0c-91f6-44b8-8703-97e86f03d31f)
 
 ## Description
 
@@ -22,7 +25,8 @@ This project is a website designed to showcase and promote the PlayStation VR pr
 - External libraries:
   - Swiper.js for carousel/slider functionality
   - Remixicon for icons
-  - Node.JS 
+  - Node.JS
+    
 
 ## Installation
 
@@ -31,5 +35,5 @@ This project is a website designed to showcase and promote the PlayStation VR pr
    ```bash
    git clone
 
-   ![image](https://github.com/DevNou/Vr-Headset/assets/145920714/dc28ab0c-91f6-44b8-8703-97e86f03d31f)
+
 
