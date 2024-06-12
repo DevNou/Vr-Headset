@@ -13,7 +13,7 @@ This project is a website designed to showcase and promote the PlayStation VR pr
 - Catalog section with detailed product information and specifications.
 - Landing page for a marketing campaign to promote the PlayStation VR.
 - Web banner section to attract user attention and drive engagement.
-- Banner ![image](https://github.com/DevNou/Vr-Headset/assets/145920714/091762f9-c846-4d00-8099-c6e69363f45d)
+- Banner 
  ![image](https://github.com/DevNou/Vr-Headset/assets/145920714/327de816-7510-4da3-8ed4-36e2082e296c)
 
 
