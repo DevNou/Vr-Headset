@@ -22,17 +22,8 @@
     <header class="header" id="header">
         <nav class="nav cotnainer">
             <a href="#" id="mainLogo" class="nav__logo"></a> 
-            <script>
+            <script src="./getter.js">
                 // Make the GET request to the server
-                fetch('http://localhost:3000/title')
-                  .then(response => response.json())
-                  .then(data => {
-                    // Set the title from the response data
-                    document.getElementById('mainLogo').textContent = data.title;
-                  })
-                  .catch(error => {
-                    console.error('Error fetching the title:', error);
-                  });
               </script>
 
             <div class="nav__menu" id="nav-menu">
