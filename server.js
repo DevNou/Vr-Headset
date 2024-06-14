@@ -5,7 +5,7 @@ const port = process.env.PORT || 3000;
 
 app.use(express.static('public')); 
 
-app.get('/api/title', (req, res) => {
+app.get('/api/title', (req, res) => { 
     const title = 'Responsive VR Website'
     res.json({ title });
 });
