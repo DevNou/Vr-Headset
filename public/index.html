@@ -17,13 +17,17 @@
     <title>Responsive VR website</title>
 </head>
 
-<body>
+<body onload="getTitle()">
     <!-- Header -->
     <header class="header" id="header">
         <nav class="nav cotnainer">
             <a href="#" id="mainLogo" class="nav__logo"></a> 
-            <script src="./getter.js">
-                // Make the GET request to the server
+            <script>
+                async function getTitle() {
+                    const response = await fetch('/api/title');
+                    const data = await response.json();
+                    document.getElementById('mainLogo').innerText = data.title;
+                }
               </script>
 
             <div class="nav__menu" id="nav-menu">
